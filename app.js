@@ -1,0 +1,11 @@
+let arr=[];
+arr.push(10);
+arr.push(20);
+arr.push('Usaid');
+arr.push(30);
+console.log(arr);
+console.log(arr[2]);
+arr.pop();
+console.log(arr);
+arr.splice(1,1, 'Hammad');
+console.log(arr);

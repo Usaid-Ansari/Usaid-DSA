@@ -1,0 +1,21 @@
+Array → Functions → Recursion → Sorting/Searching → Stack & Queue → Linked List → Backtracking → Trees → Graphs → DP
+
+
+Recursion:
+-Function thats calls itself again and again (Function ka apne aap ko again and again call karna)
+-It is another call Self Referncing call
+- it uses stack 
+- More memory 
+- performance  will be lower because of stack
+
+
+Type of Recursion 
+- Head 
+- Tail
+- Tree
+- Nested
+
+=> HEAD : Recusive call is at first statment of Function
+=> TAIL : Recursive call is in the last statment
+=> TREE : Recursive function calling itself more than one time
+=> NESTED : Recursive function will be passed as parametr in a recursive call
