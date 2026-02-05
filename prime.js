@@ -12,10 +12,9 @@ function readLine() {
 
 let n = parseInt(readLine());//17
 let isPrime = true;
-if(n<=1){
+if(n <= 1){
     isPrime = false;     
 } else{
-    // for(let i=2; i<=Math.sqrt(n);i++){  // 2<=4.1
     for(let i=2; i<=n - 1;i++){  // 2<=4.1
         console.log("i = ", i, n%i)
         if(n%i === 0) {
