@@ -10,14 +10,15 @@
 
 let newarr = [10, 20, 30, 40, 50];
 
-let i = 0; j = arr.length - 1;
+let i = 0; 
+let j = newarr.length - 1;
 
 while (i < j) {
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
+    let temp = newarr[i];
+    newarr[i] = newarr[j];
+    newarr[j] = temp;
     i++;
     j--;
 }
 
-console.log(arr);
+console.log(newarr);
