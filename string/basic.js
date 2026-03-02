@@ -14,19 +14,20 @@
 
 
 // convert temprature from celcius to kelvin
-let celsius = 40;
-
-let fahrenheit = (celsius * 9/5) + 32;
-let kelvin = celsius + 273.15;
-if(celsius >= 40 ) {
-    console.log("TOO HOT");
-}
-else if(celsius < 10) {
-    console.log("TOO COLD");
-}
-else {
+process.stdout.write("Enter a Number: ");
+process.stdin.on("data", (input) => {
+    let celsius = Number(input);
+    let fahrenheit = (celsius * 9 / 5) + 32;
+    let kelvin = celsius + 273.15;
+    if (celsius >= 40) {
+        console.log("TOO HOT");
+    }
+    else if (celsius < 10) {
+        console.log("TOO COLD");
+    }
     console.log("NORMAL TEMP");
-}
 
-console.log("Fahrenheit:", fahrenheit);
-console.log("Kelvin:", kelvin);
+
+    console.log("Fahrenheit:", fahrenheit);
+    console.log("Kelvin:", kelvin);
+});
