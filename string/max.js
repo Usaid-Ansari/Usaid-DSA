@@ -10,15 +10,19 @@
 // console.log("The maximum of two numbers is: " + result);
 
 process.stdout.write("Enter Two Number: ");
-process.stdin.on("data", (input) => {
-    let [num1, num2] = input.toString().trim().split(" ").map(Number);
 
-    if (num1 > num2) {
-        console.log(num1 + "is greater than " + num2);
-    } else if (num2 > num1) {
-        console.log(num2 + "is greater than " + num1);
-    } else {
+const handleInput = (input) => {
+    const [num1, num2] = input.toString().trim().split(" ").map(Number);
+    const max = Math.max(num1, num2);
+
+    if (num1 === num2) {
         console.log("Both numbers are equal");
+    } else {
+        console.log(`${max} is greater than ${Math.min(num1, num2)}`);
     }
 
-});
+    process.stdin.removeListener("data", handleInput);
+    process.stdin.pause();
+};
+
+process.stdin.on("data", handleInput);
