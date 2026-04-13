@@ -2,7 +2,7 @@
 process.stdout.write("Enter marks:");
 process.stdin.on("data", (input) => {
 
-    const marks = input.toString().trim().split(" ").map(Number);
+    const marks = (input.toString().trim());
     if (marks >= 90) {
         console.log("A");
     } else if (marks >= 75 && marks <= 89) {
@@ -13,4 +13,5 @@ process.stdin.on("data", (input) => {
         console.log("Fail");
 
     }
+    process.exit();
 });
