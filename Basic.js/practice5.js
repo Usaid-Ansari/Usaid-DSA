@@ -19,7 +19,7 @@ arr.sort();
 console.log(arr); 
 let index = arr.indexOf("Milk");
 console.log("The index of Milk is:", index);
-arr.splice(0, 0,"carrots ", "Lettuce");
+arr.splice(1, 1,"carrots ", "Lettuce");
 console.log(arr);
 
 let list =["apple", "tree" ,"knife", "juice"];
