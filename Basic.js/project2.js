@@ -14,8 +14,8 @@
 // • 2.2046 pounds is equal to 1 kilo
 // Output the results. Then, calculate and log the BMI: this is equal to weight (in kilos) 
 // divided by squared height (in meters). Output the results to the console.
-
-let centimeter = 175;
+let inch = 69;
+let centimeter = inch * 2.54;
 let meter  = centimeter / 100;
 console.log("meter is :", meter);
 
