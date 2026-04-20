@@ -25,3 +25,4 @@ console.log("kilo is :", kilo);
 
 let BMI = kilo / (meter * meter);
 console.log("BMI is ", BMI);
+

@@ -27,15 +27,81 @@
 // 4. Output make and model into the console.
 // 5. Output the value of forSale into the console.
 
-let myCar = {myCarName : "TATA Motor",
-    Model : 2026,
-    colour : "Black",
-    FirstOwner : true,
-    Seat : 6,
-    forSale : "yes",
-}
-let myCarColour = myCar["colour"];
-let myCarSale = myCar["fo12412rSale"];
-console.log(myCarSale);
-console.log(myCar.Model);
-console.log(myCar.forSale);
+// let myCar = {myCarName : "TATA Motor",
+//     Model : 2026,
+//     colour : "Black",
+//     FirstOwner : true,
+//     Seat : 6,
+//     forSale : "yes",
+// }
+// let myCarColour = myCar["colour"];
+// let myCarSale = myCar["forSale"];
+// console.log(myCarSale);
+// console.log(myCar.Model);
+// console.log(myCar.forSale);
+
+// let company = { companyName: "Healthy Candy",
+// activities: ["food manufacturing", 
+// "improving kids' health", "manufacturing toys"],
+// employee : ["name", "salary", "ID"],
+// address: {
+// street: "2nd street",
+// number: "123",
+// zipcode: "33116",
+// city: "Miami",
+// state: "Florida"
+// },
+// yearOfEstablishment: 2021 
+// };
+// // console.log(company.activities[1]);
+// // console.log(company.employee [2]);
+// company ["address"]["street"] = "3rd street";
+// company["address"]["zipcode"] = "424001";
+// company["address"]["city"] = "Dhule";
+// console.log(company.address["street"]);
+// console.log(company.address["zipcode"]);
+// console.log(company.address["city"]);
+// console.log(company.yearOfEstablishment);
+
+//Array in object
+// let addresses = [{
+//     street: "2nd street",
+//     number: "123",
+//     zipcode: "33116",
+//     city: "Miami",
+//     state: "Florida"
+// },
+// {
+//     street: "1st West avenue",
+//     number: "5",
+//     zipcode: "75001",
+//     city: "Addison",
+//     state: "Texas"
+// }];
+// addresses[0].street = "Muslim Nagar";
+// let streetName = addresses[0].street;
+// console.log(streetName);
+
+//Objects in arrays in objects
+let  company = {
+    companyName: "Healthy Candy",
+    activities: ["food manufacturing", "improving kids' health", "manufacturing toys"],
+    address: [{
+        street: "2nd street",
+        number: "123",
+        zipcode: "33116",
+        city: "Miami",
+        state: "Florida"
+    },
+    {
+        street: "1st West avenue",
+        number: "5",
+        zipcode: "75001",
+        city: "Addison",
+        state: "Texas"
+    }],
+    yearOfEstablishment: 2021
+};
+let streetName = company.address[0].street;
+streetName = "Muslim Nagar";
+console.log(company);

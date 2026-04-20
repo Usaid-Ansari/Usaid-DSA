@@ -45,6 +45,9 @@ let obj3 = {
     quantity : " 100",
 }
 
-let array = [obj1, obj2, obj3];
-console.log(array);
+let array1 = [obj1];
+let array2 = [obj2];
+let array3 = [obj3];
+let newArr = array1.concat(array2).concat(array3);
+console.log(newArr);
 console.log("The quantity is :",obj3.quantity);

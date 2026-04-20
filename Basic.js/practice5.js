@@ -13,13 +13,15 @@
 let arr = ["Milk", "Bread", "Apple"];
 arr[1] = "Banana, Egg";
 console.log(arr);
-arr.pop();
+arr.pop();// delete the last index of array
 console.log(arr);
 arr.sort();
 console.log(arr); 
 let index = arr.indexOf("Milk");
 console.log("The index of Milk is:", index);
 arr.splice(1, 1,"carrots ", "Lettuce");
+console.log(arr);
+arr.splice(4, 0, "Milk");
 console.log(arr);
 
 let list =["apple", "tree" ,"knife", "juice"];
@@ -31,3 +33,5 @@ console.log(combine);
 
 combine.pop();
 console.log(combine);
+
+

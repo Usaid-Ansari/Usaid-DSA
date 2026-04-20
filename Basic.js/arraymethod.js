@@ -13,5 +13,5 @@ console.log(arr);
 
 let arr5 = [1, 2, 3];
 let arr6 = [4, 5, 6];
-let arr7 = arr5.concat(arr6);
+let arr7 =arr5.concat(arr6)
 console.log(arr7);
