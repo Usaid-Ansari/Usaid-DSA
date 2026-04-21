@@ -130,7 +130,7 @@
 
 // let dishes = {
 //     name : "Keema Bheja",
-//     make : "Ammi",
+//     made : "Ammi",
 //     people : 15,
 // }
 // for(let dish in dishes) {
@@ -155,10 +155,19 @@
 //Break;
 
 
-for (let i = 1; i < 10; i++) {
-    if (i === 7) {
-        continue;
-    }
-    console.log(i);
-}
+// for (let i = 1; i < 10; i++) {
+//     if (i === 7) {
+//         continue;
+//     }
+//     console.log(i);
+// }
 
+
+
+// let step = 3;
+// for (let i = 0; i < 1000; i += step) {
+//     if (i > 10) {
+//         break;
+//     }
+//     console.log(i);
+// }
