@@ -70,8 +70,43 @@
 // sum(1, 2)
 // sum(3,4);
 
-function addtwonumber(x, y) {
-    return x + y;
+// function addtwonumber(x, y) {
+//     return x + y;
+// }
+// let result = addtwonumber(5, 4);
+// console.log(result * 3);
+
+// let sayHi = () => console.log("hi");
+// sayHi();
+
+// const arr = ["Hi", "by", "Tie"];
+// arr.forEach(e => console.log(e)); 
+
+// function addTwoNumbers(a, b){
+//     return a + b;
+// }
+
+// let resultArr = [];
+
+// for (let i = 0; i < 10; i++) {
+//     let result = addTwoNumbers(i, 2 * i);
+//     resultArr.push(result);
+// }
+
+// console.log(resultArr);
+
+
+
+function addMyNumber(a, b) {
+    return a + b;
 }
-let result = addtwonumber(5, 4);
-console.log(result * 3);
+let finalValue = [];
+for (let i = 0; i <= 9; i++) {
+    let firstValue = i * 5;
+    let secondValue = i * i;
+    let result = addMyNumber(firstValue, secondValue);
+    finalValue.push(result);
+}
+console.log(finalValue);
+
+
