@@ -171,3 +171,24 @@
 //     }
 //     console.log(i);
 // }
+
+// firstname = "Maaike";
+// x = 2;
+// // console.log(firstname);
+// // console.log(x);
+// firstname = "Edward";
+// x = 7;
+// console.log(firstname);
+// console.log(x);
+
+// const  x = 2;
+// // console.log(x);
+// x = 20;
+// console.log(x);
+
+var n = 5;
+for(let i=1; i<=n; i++){
+    for(let j=1; j<=n-1; j++){
+    console.log(" *");
+    }
+} 
