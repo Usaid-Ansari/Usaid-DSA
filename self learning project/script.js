@@ -6,7 +6,7 @@ let number = Math.floor(Math.random() * max) + 1;
 let status = false;
 
 while (status == false) {
-    let userGuess = prompt("Enter Number:");e
+    let userGuess = prompt("Enter Number:");
     userGuess = parseInt(userGuess);
 
     if (userGuess === number) {
