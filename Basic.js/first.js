@@ -102,10 +102,26 @@ if(num % 2 == 0) {
 // console.log(user);
 
 //check the number is divisble by 5
-let number = prompt("Enter a Number : ");
-if(number % 5 == 0){
-    console.log(number, "is a multiple of 5");
+// let number = prompt("Enter a Number : ");
+// if(number % 5 == 0){
+//     console.log(number, "is a multiple of 5");
+// }
+// else{
+//     console.log(number, "is not a multiple of 5");
+// }
+
+// Find a grades on the basis of marks
+let score = prompt("Enter your score(0-100) : ");
+let grade;
+if(score >= 90 && score <= 100){
+    grade = 'A';
+} else if(score >=70 && score <= 89){
+    grade = 'B'; 
+} else if(score >= 60 && score <= 69){
+    grade = 'C';
+} else if(score >= 50 && score <= 59){
+    grade = 'D';
+}  else {
+    console.log("Fail");
 }
-else{
-    console.log(number, "is not a multiple of 5");
-}
+console.log("according to your score, your grade was: ", grade);
