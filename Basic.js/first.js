@@ -18,30 +18,82 @@
 
 
 
-const student = {
-    full_Name : "Ansari Usaid",
-    age : 22,
-    cgpa : 7.5,
-    isPass : true,
-};
-console.log(student);
+// const student = {
+//     full_Name : "Ansari Usaid",
+//     age : 22,
+//     cgpa : 7.5,
+//     isPass : true,
+// };
+// console.log(student);
 
-const product = {
-    title : "Ball Pen",
-    rating : 4,
-    offer : 5,
-    price: 270,
-}
-console.log(product);
+// const product = {
+//     title : "Ball Pen",
+//     rating : 4,
+//     offer : 5,
+//     price: 270,
+// }
+// console.log(product);
 
-const profile = {
-    Name : 'ShradhaKhapra',
-    isFollows : false,
-    button2 : 'Message',
-    post : 195,
-    follower : 569,
-    following : 4,
-    about : 'Apna College'|'Ex Microsoft & DRDO',
+// const profile = {
+//     Name : 'ShradhaKhapra',
+//     isFollows : false,
+//     button2 : 'Message',
+//     post : 195,
+//     follower : 569,
+//     following : 4,
+//     about : 'Apna College'|'Ex Microsoft & DRDO',
+// }
+// console.log(profile);
+// console.log(typeof profile ["follower"]);
+
+
+// // Arithmetic opertaion 
+let a = 5;
+let b = 2;
+console.log("a = ", a, "&","b = ", b);
+// a **= 4;
+// console.log("a = ", a);
+// console.log("a = ", a, "& b = ", b);
+// console.log("a + b  = ", a + b);
+// console.log("a - b = ", a - b);
+// console.log("a * b = ", a * b);
+// console.log("a / b = ", a / b);
+// console.log("a % b = ", a % b);
+// console.log("a ** b = ", a ** b);
+
+// Unary Operator
+//a++
+console.log("a++ = ", a++); // 5
+console.log("a = ", a);  // 6
+//--a
+console.log("a-- = ", a--); 
+console.log("a = ", a);
+console.log("--a = ", --a); // 4
+console.log("a = ", a);
+let language = "javaScript";
+let message = `I Learn ${language}`;
+console.log(message);
+let message2 = `I Learn ${language}`;
+console.log(message2);
+let age = 25;
+if(age > 18){
+    console.log("You can Vote");
 }
-console.log(profile);
-console.log(typeof profile ["follower"]);
+let mode = "dark";
+let color;
+
+if(mode == "dark"){
+    color = "white";
+}
+else{
+    color = "black";
+}
+console.log(color);
+
+//Find number is even odd 
+let num = 11;
+if(num % 2 == 0) {
+    console.log(num, "is Even Number");
+} else{
+    console.log(num, "is Odd");
+}

@@ -193,3 +193,13 @@ p{
     transform: translateX(10px);
   }
 }
+/* Media Query */
+body{
+  background-color: red ;
+}
+
+@media only screen and(max-width : 455px){
+  body{
+    background-color: blue;
+  }
+}
