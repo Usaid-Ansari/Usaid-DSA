@@ -97,3 +97,15 @@ if(num % 2 == 0) {
 } else{
     console.log(num, "is Odd");
 }
+
+// let user = prompt("hello");
+// console.log(user);
+
+//check the number is divisble by 5
+let number = prompt("Enter a Number : ");
+if(number % 5 == 0){
+    console.log(number, "is a multiple of 5");
+}
+else{
+    console.log(number, "is not a multiple of 5");
+}
