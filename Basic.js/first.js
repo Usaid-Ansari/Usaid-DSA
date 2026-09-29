@@ -1,7 +1,7 @@
 // console.log("Welcome The Frontend journey");
 // console.log("I love javascript");
 // alert("Asli Moti Fabrics");
-// fullName = ("Mahera"); 
+// fullName = ("Mahera");
 // console.log(fullName);
 // Math.random();
 // prompt(Math.random());
@@ -15,8 +15,6 @@
 //   console.log(b);
 // }
 // console.log(b);
-
-
 
 // const student = {
 //     full_Name : "Ansari Usaid",
@@ -46,11 +44,10 @@
 // console.log(profile);
 // console.log(typeof profile ["follower"]);
 
-
-// // Arithmetic opertaion 
-let a = 5;
-let b = 2;
-console.log("a = ", a, "&","b = ", b);
+// // Arithmetic opertaion
+// let a = 5;
+// let b = 2;
+// console.log("a = ", a, "&", "b = ", b);
 // a **= 4;
 // console.log("a = ", a);
 // console.log("a = ", a, "& b = ", b);
@@ -63,10 +60,10 @@ console.log("a = ", a, "&","b = ", b);
 
 // Unary Operator
 //a++
-console.log("a++ = ", a++); // 5
-console.log("a = ", a);  // 6
+/*console.log("a++ = ", a++); // 5
+console.log("a = ", a); // 6
 //--a
-console.log("a-- = ", a--); 
+console.log("a-- = ", a--);
 console.log("a = ", a);
 console.log("--a = ", --a); // 4
 console.log("a = ", a);
@@ -76,27 +73,26 @@ console.log(message);
 let message2 = `I Learn ${language}`;
 console.log(message2);
 let age = 25;
-if(age > 18){
-    console.log("You can Vote");
+if (age > 18) {
+  console.log("You can Vote");
 }
 let mode = "dark";
 let color;
 
-if(mode == "dark"){
-    color = "white";
+if (mode == "dark") {
+  color = "white";
+} else {
+  color = "black";
 }
-else{
-    color = "black";
-}
-console.log(color);
+console.log(color);*/
 
-//Find number is even odd 
-let num = 11;
-if(num % 2 == 0) {
-    console.log(num, "is Even Number");
-} else{
-    console.log(num, "is Odd");
-}
+//Find number is even odd
+// let num = 11;
+// if (num % 2 == 0) {
+//   console.log(num, "is Even Number");
+// } else {
+//   console.log(num, "is Odd");
+// }
 
 // let user = prompt("hello");
 // console.log(user);
@@ -111,17 +107,39 @@ if(num % 2 == 0) {
 // }
 
 // Find a grades on the basis of marks
-let score = prompt("Enter your score(0-100) : ");
-let grade;
-if(score >= 90 && score <= 100){
-    grade = 'A';
-} else if(score >=70 && score <= 89){
-    grade = 'B'; 
-} else if(score >= 60 && score <= 69){
-    grade = 'C';
-} else if(score >= 50 && score <= 59){
-    grade = 'D';
-}  else {
-    console.log("Fail");
+// let score = prompt("Enter your score(0-100) : ");
+// let grade;
+// if (score >= 90 && score <= 100) {
+//   grade = "A";
+// } else if (score >= 70 && score <= 89) {
+//   grade = "B";
+// } else if (score >= 60 && score <= 69) {
+//   grade = "C";
+// } else if (score >= 50 && score <= 59) {
+//   grade = "D";
+// } else {
+//   grade = "E";
+//   console.log(grade, "Fail");
+// }
+// console.log("according to your score, your grade was: ", grade);
+// Loops 
+let sum = 0;
+let n = 100;
+for(let i = 1; i<=n; i++) {
+  sum += i; 
 }
-console.log("according to your score, your grade was: ", grade);
+console.log(sum);
+
+for(var  j=1; j <= 5; j++){
+  console.log("j= ", j);
+}
+console.log(j);
+
+//for of loop
+let str = "Hello";
+let size = 0; 
+for(let character of str){
+  console.log("character= ", character);
+  size++
+}
+console.log("string size : ", size);
