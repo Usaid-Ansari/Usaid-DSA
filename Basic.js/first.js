@@ -143,3 +143,15 @@ for(let character of str){
   size++
 }
 console.log("string size : ", size);
+
+//forin loops 
+let student = {
+  name : "Usaid",
+  class : "B.E",
+  cgpa : 7.8,
+  isPass : true,
+
+}
+for(let key in student) {
+  console.log(key , student[key]);
+}
