@@ -122,36 +122,59 @@ console.log(color);*/
 //   console.log(grade, "Fail");
 // }
 // console.log("according to your score, your grade was: ", grade);
-// Loops 
+// Loops
 let sum = 0;
 let n = 100;
-for(let i = 1; i<=n; i++) {
-  sum += i; 
+for (let i = 1; i <= n; i++) {
+  sum += i;
 }
 console.log(sum);
 
-for(var  j=1; j <= 5; j++){
+for (var j = 1; j <= 5; j++) {
   console.log("j= ", j);
 }
 console.log(j);
 
 //for of loop
 let str = "Hello";
-let size = 0; 
-for(let character of str){
+let size = 0;
+for (let character of str) {
   console.log("character= ", character);
-  size++
+  size++;
 }
 console.log("string size : ", size);
 
-//forin loops 
+//forin loops
 let student = {
-  name : "Usaid",
-  class : "B.E",
-  cgpa : 7.8,
-  isPass : true,
+  name: "Usaid",
+  class: "B.E",
+  cgpa: 7.8,
+  isPass: true,
+};
+for (let key in student) {
+  console.log(key, student[key]);
+}
 
+let target = 100;
+for (let i = 1; i <= target; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
 }
-for(let key in student) {
-  console.log(key , student[key]);
+// number guessing game
+
+let guessNumber = 50;
+let userNumber = Number(prompt("Enter a guess Number : "));
+
+while (userNumber != guessNumber) {
+  if (userNumber > guessNumber) {
+    userNumber = prompt(
+      "You enterd a wrong Number. Number is  greater than guess Number",
+    );
+  } else if (userNumber < guessNumber) {
+    userNumber = prompt(
+      "You enterd a wrong Number. Number is  smaller than guess Number",
+    );
+  }
 }
+console.log("Congratulation You enter a write number");
