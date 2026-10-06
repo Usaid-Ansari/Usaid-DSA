@@ -145,36 +145,95 @@ for (let character of str) {
 console.log("string size : ", size);
 
 //forin loops
-let student = {
-  name: "Usaid",
-  class: "B.E",
-  cgpa: 7.8,
-  isPass: true,
-};
-for (let key in student) {
-  console.log(key, student[key]);
-}
+// let student = {
+//   name: "Usaid",
+//   class: "B.E",
+//   cgpa: 7.8,
+//   isPass: true,
+// };
+// for (let key in student) {
+//   console.log(key, student[key]);
+// }
 
-let target = 100;
-for (let i = 1; i <= target; i++) {
-  if (i % 2 == 0) {
-    console.log(i);
-  }
-}
+// let target = 100;
+// for (let i = 1; i <= target; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//   }
+// }
 // number guessing game
+// console.log("hello", "\n","Usaid");
 
-let guessNumber = 50;
-let userNumber = Number(prompt("Enter a guess Number : "));
+// let s1 = "Hello ";
+// let s2 = "JavaScript";
+// let result = s1.concat(s2);  //mix the string
+// console.log(result);
 
-while (userNumber != guessNumber) {
-  if (userNumber > guessNumber) {
-    userNumber = prompt(
-      "You enterd a wrong Number. Number is  greater than guess Number",
-    );
-  } else if (userNumber < guessNumber) {
-    userNumber = prompt(
-      "You enterd a wrong Number. Number is  smaller than guess Number",
-    );
-  }
-}
-console.log("Congratulation You enter a write number");
+// let str1 = "01234567";
+// console.log(str1.slice(1,5));
+
+// let fullName = prompt("Enter Your Full Name : ");
+// let UserName = "@ " + fullName +" "+ fullName.length;
+// console.log(UserName);
+
+//Arrays
+// let marks = [10, 20, 30, 40, 50];
+// console.log(marks);
+// console.log(marks.length);
+// console.log(typeof [marks]);
+// marks[2] = 98;
+// console.log(marks);
+// //print all the array
+// let arr = [10, 11, 12, 13, 14];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+// for (let element of arr) {
+//   console.log(element);
+// }
+// let cities = ["Mumbai", "Pune", "Hyderabad", "Banglore"];
+// for (let city of cities) {
+//   console.log(city.toUpperCase());
+// }
+// //Practice Q
+
+// let array = [85, 97, 44, 37, 76, 60];
+// let sumofArray = 0;
+// for (let i = 0; i < array.length; i++) {
+//   sumofArray += array[i];
+// }
+// let average = sumofArray / array.length;
+// console.log(`averge value of array ${average}`);
+
+// let items = [250, 645, 300, 900, 50];
+// for (let i = 0; i < items.length; i++) {
+//   let offer = items[i] / 10;
+//   items[i] = items[i] - offer;
+// }
+
+// console.log(items);
+let New = [10, 20, 30, 40, 50];
+New.push(60);
+console.log(New);
+New.pop();
+console.log(New);
+let fruit1 = ["Banana", "Apple", "Strawbery"];
+let fruit2 = ["Orange", "Grapes","Mango"];
+let newFruit = fruit1.concat(fruit2);
+console.log(newFruit);
+//
+let method = [10, 20, 30];
+let val = method.unshift();
+console.log(val);
+let arr5 = [1, 2, 3, 4, 5, 6,];
+arr5.splice(2,2,15,16);
+console.log(arr5);
+
+let company = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+console.log(company);
+// company.shift();
+// console.log(company);
+company.splice(2,1,"OLA");
+console.log(company);
+company.push("Amazon");
+console.log(company);

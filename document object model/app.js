@@ -27,7 +27,7 @@ boxes.forEach((box) => {
     if (turnO) {
       //player 0
       box.innerText = "O";
-      turnO = false;
+      turnO = false; //X press
     } else {
       //player X
       box.innerText = "X";
