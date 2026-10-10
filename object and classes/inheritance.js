@@ -70,9 +70,27 @@ class Animal {
 
 class Dog extends Animal {
     sound() {
+        super.sound();
         console.log("Dog barks");
     }
 }
 
 let d = new Dog();
 d.sound();
+
+class Vehicle  {
+    constructor(brand) {
+        this.brand = brand;
+    }
+}
+
+class car extends Vehicle {
+    constructor(brand, model) {
+        super(brand);
+        this.model = model;
+    }
+}
+
+let car1 = new car ("Toyota", "Fortuner");
+console.log(car1.brand);
+console.log(car1.model);
