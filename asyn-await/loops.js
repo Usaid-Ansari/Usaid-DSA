@@ -25,5 +25,18 @@ const myObject = {
     rb : 'ruby',
 }
 for(const key in myObject) {
-    console.log(`${key} shortcut is for ${myObject[key]}`);
+    // console.log(`${key} shortcut is for ${myObject[key]}`);
 }
+const fruits = ["Apple", "Mango", "Banana"];
+
+for (const item in fruits) {
+    // console.log(item,":-",  fruits[item]);
+}
+
+//For Each loop
+
+const coding = ["js", "ruby", "java", "cpp"];
+
+coding.forEach( (element) => {
+    console.log(element);
+})  
