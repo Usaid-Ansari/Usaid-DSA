@@ -146,3 +146,18 @@ async function checkData() {
     }
 }
 checkData();
+
+async function getAllUser() {
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json()
+        data.forEach(element => {
+        data.name;
+          console.log(element.username,element.email);
+            // console.log(element.email);
+        });
+    } catch (error) {
+        console.log("E", error);
+    }
+}
+getAllUser();
