@@ -147,17 +147,31 @@ async function checkData() {
 }
 checkData();
 
-async function getAllUser() {
-    try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users')
-        const data = await response.json()
-        data.forEach(element => {
-        data.name;
-          console.log(element.username,element.email);
-            // console.log(element.email);
-        });
-    } catch (error) {
-        console.log("E", error);
-    }
-}
-getAllUser();
+// async function getAllUser() {
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const data = await response.json()
+//         data.forEach(element => {
+//         data.name;
+//           console.log(element.username,element.email);
+//             // console.log(element.email);
+//         });
+//     } catch (error) {
+//         console.log("E", error);
+//     }
+// }
+// getAllUser();
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    data.forEach(element => {
+        console.log(element);
+    });
+    // console.log(data.username);
+})
+.catch((error) => {
+    console.log(error);
+})
